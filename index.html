@@ -1,0 +1,136 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="METODO DOS CRIAS ">
+    <title>METODO DOS CRIAS DOUBLE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🥷🏻</text></svg>">
+</head>
+
+<body>
+    <div class="container">
+        <div class="banner">
+            <img src="images/siel.jpg" alt="Oportunidade Única Identificada">
+        </div>
+        <div id="text">
+            <p id="texto" style="margin-top: 30px;" class="texto"><b>🎲| DOUBLE : <span id="numeroGerado"></span></b></p>
+			<h3 style="text-align: center;">👺 Criador: TurcoCPX</h3>
+        <h3 style="text-align: center;">1 COR ⚫ / 2 COR 🔴</h3>
+        </div>
+        <div id="game-wrapper" class="game-wrapper">
+            <div id="board" class="board"></div>
+            <img id="overlay" class="overlay" src="images/x1bo5lx1ukbe.gif" alt="Desfocado">
+            <div class="
+          status-container">
+                <p id="status" class="status"></p>
+            </div>
+        </div>
+        <p id="info" class="info">ROBO CRIADO PARA FAZER GRANA</p>
+        <button id="generate-opportunity" class="generate-opportunity">HACKEAR DOUBLE BLAZE</button>
+        <br>
+        <div style="width: 100%; padding: 25px;" class="game-iframe">
+            <iframe id="game-iframe" src="" width="100%" height="100%" style="border-radius: 15px; border: none;">...</iframe>
+        </div>
+        <br>
+        <title>Texto com cor branca centralizado</title>
+        <style>
+            body {
+                color: rgb(255, 255, 255);
+                /* Cor do texto branca */
+                text-align: center;
+                /* Centralizar o texto */
+                padding: 20px;
+                /* Espaçamento em torno do conteúdo */
+            }
+        </style>
+        <div id="iframe-disabled">
+            <iframe src="" style="visibility: hidden;" width="1px" height="1px">...</iframe>
+        </div>
+        <div style="margin: 10px 0;"></div>
+        <p style="font-size: 8px;">Powered By @igormtsofc</p>
+
+    </div><b>
+<script type="4c7682467eb3e3a8d165fe44-text/javascript">
+
+            var hasActive = true
+
+            const now = new Date();
+            const minutes = now.getMinutes();
+
+            if (minutes % 2 !== 0) {
+                hasActive = true
+            }
+
+            document.getElementById('generate-opportunity').addEventListener('click', function () {
+                const numeroAleatorio = gerarNumeroAleatorio(1, 2);
+                document.getElementById('numeroGerado').textContent = ` ${numeroAleatorio} COR`;
+            });
+            const boardElement = document.getElementById("board");
+            const y = "s"
+            const overlayElement = document.getElementById("overlay");
+            const statusElement = document.getElementById("status");
+            const generateOpportunityButton = document.getElementById("generate-opportunity");
+            function generateMinesBoard(diamond_positions) {
+                const grid = Array.from({
+                    length: 5
+                }, (_, i) => diamond_positions.includes(i) ? "💎" : "💣");
+                return Array.from({
+                    length: 5
+                }, (_, i) => grid.slice(i * 5, i * 5 + 5));
+            }
+
+            function gerarNumeroAleatorio(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+    
+            document.addEventListener('DOMContentLoaded', function () {
+                const numeroAleatorio = gerarNumeroAleatorio(3, 4);
+                document.getElementById('numeroAleatorio').textContent = numeroAleatorio;
+            });
+            function renderBoard(board) {
+                boardElement.innerHTML = board.map((row) => row.map((cell) => `<div><img src="${cell === "💎" ? "https://media.discordapp.net/attachments/1263208183271526550/1266770866230792222/image.png?ex=66a65bcd&is=66a50a4d&hm=ac4fedea9d99ac89fd466134d2b3dc626e52b52cf12561472d2351fdc107bc68&=&format=webp&quality=lossless" : "https://media.discordapp.net/attachments/1263208183271526550/1266771070221029397/image.png?ex=66a65bfe&is=66a50a7e&hm=781bab29b91943b00d01005bc649867ec9b0c3c26c4739d0e6b1fe0deff44a55&=&format=webp&quality=lossless"}" alt="${cell}"></div>`).join("")).join("");
+            }
+            function handleClickGenerateOpportunity() {
+                overlayElement.style.display = "block";
+                statusElement.style.display = "block";
+                statusElement.parentNode.style.opacity = "1";
+                const diamond_positions = randomDiamondPositions();
+                const board = generateMinesBoard(diamond_positions);
+                renderBoard(board);
+                statusElement.textContent = "";
+                setTimeout(() => {
+                    statusElement.textContent = "";
+                }
+                    , 2000);
+                setTimeout(() => {
+                    statusElement.textContent = "";
+                }
+                    , 4000);
+                setTimeout(() => {
+                    overlayElement.style.display = "none";
+                    statusElement.style.display = "none";
+                    statusElement.parentNode.style.opacity = "0";
+                }
+                    , 6000);
+            }
+            function randomDiamondPositions() {
+                const quantidade = Math.floor(Math.random() * 5) + 4;
+                return Array.from({
+                    length: quantidade
+                }, () => Math.floor(Math.random() * 25));
+            }
+            generateOpportunityButton.addEventListener("click",  handleClickGenerateOpportunity);
+
+            document.addEventListener("DOMContentLoaded", () => {
+                handleClickGenerateOpportunity();
+            }
+
+            );
+
+        </script>
+<script src="js/addons.js" type="4c7682467eb3e3a8d165fe44-text/javascript"></script>
+</b>
+    <script src="js/rocket-loader.min.js" data-cf-settings="4c7682467eb3e3a8d165fe44-|49" defer=""></script>
+
+
+</body></html>
